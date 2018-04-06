@@ -4,7 +4,6 @@
 
 
 
-
 > "*To know nothing of what happened before you were born,* 
 >
 > *is to remain forever a child*"
@@ -42,16 +41,22 @@ Co-founder and Technical Director of [Actus srl](http://www.actus.it), company p
 
 | Description                                                  | Link                                                        |
 | :----------------------------------------------------------- | :---------------------------------------------------------- |
-| Preventive Archaeology for a planned new highway connecting Rome to Viterbo, 2015-2017. Storymap. | http://www.actus.it/kassiater                               |
-| Scientific documentation on two excavations of medieval churches directed by the Pontificio Istituto di Archeologia Cristiana, 2014-2017. | http://www.actus.it/lavori-actus/item/1-riva-ligure-im.html |
-| Archaeological excavations in the ancient city of Rieti, 2014-2015. | http://www.actus.it/lavori-actus/item/4-rieti-ri.html       |
+| Preventive Archaeology for a planned new highway connecting Rome to Viterbo, 2015-2017. Storymap. | [http://www.actus.it/kassiater](http://www.actus.it/kassiater)                               |
+| Scientific documentation on two excavations of medieval churches directed by the Pontificio Istituto di Archeologia Cristiana, 2014-2017. | [http://www.actus.it/lavori-actus/item/1-riva-ligure-im.html](http://www.actus.it/lavori-actus/item/1-riva-ligure-im.html) |
+| Archaeological excavations in the ancient city of Rieti, 2014-2015. | [http://www.actus.it/lavori-actus/item/4-rieti-ri.html](http://www.actus.it/lavori-actus/item/4-rieti-ri.html)       |
 
 
 
 ## Education
 
-<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />  University of Rome 'La Sapienza' - Bachelor’s degree in archaeology, 2002
+<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />  
 
-<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />  University of Rome 'La Sapienza' - *Diploma di Specializzazione* in classical archaeology, 2007
+University of Rome 'La Sapienza' - Bachelor’s degree in archaeology, 2002
 
-<img src="https://students.uu.nl/sites/default/files/styles/image_385x257/public/images/rebo_use_exchange-luiss.jpg?itok=Qls3VRz3&timestamp=1418386977" width="100px" />  LUISS Business School, Rome - Master’s in Preventive Archaeology and Archaeological Risk Management, 2012
+<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />  
+
+University of Rome 'La Sapienza' - *Diploma di Specializzazione* in classical archaeology, 2007
+
+<img src="https://students.uu.nl/sites/default/files/styles/image_385x257/public/images/rebo_use_exchange-luiss.jpg?itok=Qls3VRz3&timestamp=1418386977" width="100px" />  
+
+LUISS Business School, Rome - Master’s in Preventive Archaeology and Archaeological Risk Management, 2012
