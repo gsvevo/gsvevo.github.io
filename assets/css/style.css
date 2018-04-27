@@ -1,24 +1,24 @@
 .bar {
-  fill: rgb(235, 194, 14);
-  stroke: rgb(248, 149, 20);
+  fill: #DC4404;
+  stroke:#F3BB3B;
 }
 
 .bar:hover {
-  fill: rgb(255, 0, 0);
+  fill:#ED9729;
 }  
 
 .axis{
-    stroke: rgb(192, 90, 6);
+    stroke: #F3BB3B;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
   }
 
 .axis line {
-    stroke: rgb(192, 90, 6);
+    stroke: #F3BB3B;
   }
 
 .axis path {
-    stroke: rgb(192, 90, 6);
+    stroke: #F3BB3B;
   }
 
 .axis--x path {
