@@ -378,7 +378,7 @@ Font-size: Between 10px and 36px (depending on the type of chart)
 
 Please choose from these colors:
 
-![](C:\Users\Giovanni\Desktop\barchart\assets\img\colors.jpg)
+![](assets\img\colors.jpg)
 
 #### License
 
@@ -412,7 +412,7 @@ Add an `img` folder inside the `assets` folder and place in it an SVG image of y
 
 The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 50 px border on each side, as shown in the image below.
 
-![](C:\Users\Giovanni\Desktop\barchart\assets\img\scheme.png)
+![](assets\img\scheme.png)
 
 
 
