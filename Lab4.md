@@ -26,7 +26,7 @@ In your IDE (Webstorm), open `step1.html` to prepare for editing.
 
 In this file you will see a basic HTML page which will not display anything on the screen. It is important, though, to start setting up the workspace. 
 
-To make use of D3’s capabilities, you must include the `d3.js` file in your web page. Inside the `head` tag, we include the latest version of D3.js (v.4) directly from the [d3js.org]() website. 
+To make use of D3’s capabilities, you must include the `d3.js` file in your web page. Inside the `head` tag, we include the latest version of D3.js (v.5) directly from the [d3js.org]() website. 
 
 D3 leverages the Scalable Vector Graphic, or **SVG** format, which allows you to render shapes, lines and fills that can be zoomed in or out without losing quality. Inside the `head` tag, we include an SVG tag specifying width and height of our chart (400x400 pixels). 
 
@@ -38,7 +38,7 @@ Inside the `body`, we put our JavaScript code between `script` tags.
 
 <head>
     <svg width="400" height="400"></svg>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <body>
@@ -140,11 +140,10 @@ Dec,7.72
 We use the `d3.csv` method to fetch a csv file at the specified URL. The anonymous function (d) gets the data from the 'rain' column of the csv and returns an array of objects. The + operator `+d` is used to return the numeric representation of the object.
 
 ```js
-        d3.csv("data.csv", function(d) {
+        d3.csv("assets/data.csv", function(d) {
         d.rain = +d.rain;
         return d;
-        }, function(error, data) {
-        if (error) throw error;
+        }.then(function(data) {
 ```
 
 Then we set the domain for the x and y axis. You should recall from the lesson that the **domain** is the complete set of values, so for example all the precipitation values from 0.47 to 7.72 inches. The **range** is the set of resulting values of a function, in this case the resulting values of scaling precipitations from 0 to 400 (the max height of our chart defined before).
@@ -361,57 +360,102 @@ To see these changes applied in the chart, we need to add the classes to the SVG
 
 ****
 
-After you successfully build this chart, you are expected to build another data visualization using D3.js. You can use some of your own data or you can get inspiration visiting one of many sites that host D3 examples. The [official website](https://d3js.org/) of D3.js is the best place to start. Other websites with live examples and code snippets are [bl.ocks.org](https://bl.ocks.org/) and [christopheviau.com](http://christopheviau.com/d3list/gallery.html#title=all). To get an idea about the different chart types and what kind of data they are better suited for, take a look at [datavizproject.com](http://datavizproject.com/).
+After you successfully build this chart, you are expected to build another data visualization using D3.js. You can use some of your own data or you can get inspiration visiting one of many sites that host D3 examples. The [official website](https://d3js.org/) of D3.js is the best place to start. Other websites with live examples and code snippets are [bl.ocks.org](https://bl.ocks.org/), [d3-discovery.net](https://d3-discovery.net/) and [christopheviau.com](http://christopheviau.com/d3list/gallery.html#title=all). To get an idea about the different chart types and what kind of data they are better suited for, take a look at [datavizproject.com](http://datavizproject.com/).
+
+As said before, your visualization will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. For this reason, the style of your chart should comply with these rules:
+
+#### SVG
+
+The SVG area of the chart should be 400 x 400 pixels 
+
+#### Font
+
+Font-type: Open Sans (https://fonts.googleapis.com/css?family=Open+Sans)
+
+Font-size: Between 10px and 36px (depending on the type of chart)
+
+#### Color
+
+Please choose from these colors:
+
+![](C:\Users\Giovanni\Desktop\barchart\assets\img\colors.jpg)
+
+#### License
+
+Please credit the author of the example you are basing your visualization on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
+
+#### Readme.md
+
+You are also required to write a project description in the `readme.md` file. This file will describe the type of visualization, a brief introduction, the major functions (for example what type of data are best visualized with it), data sources, credit acknowledgement, and other necessary information. 
+
+#### Images
+
+Add an `img` folder inside the `assets` folder and place in it an SVG image of your visualization. To do so you need to export it from the html page. 
+
+> To extract an SVG image from an html file proceed like this:
+>
+> In Microsoft Edge 
+>
+> 1. Right Click **>** Save Picture As
+>
+> In Chrome, Firefox, etc.
+>
+> 1. Inspect Element (*Make sure you've selected the root svg element you'd like to save*).
+>
+> 2. Right Click **>** Edit as HTML
+>
+> 3. Copy the outer HTML
+>
+> 4. Paste in your favorite text editor (*VS Code*), and save as a `.svg`
+>
+>    ​
+
+The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 50 px border on each side, as shown in the image below.
+
+![](C:\Users\Giovanni\Desktop\barchart\assets\img\scheme.png)
 
 
 
+#### Grading criteria:
+
+- SVG dimensions (400 x 400 pixels) and margins (50 x 50 px)  **(7 points)**
+- Font-type Open Sans **(4 points)**
+- Font size between 10 and 36 (depending on the type of chart) **(4 points)**
+- Color palette **( 8 points)**
+- License acknowledgement  **(4 points)**
+- Readme.md file **(8 points)**
 
 
-
-
--------------- **FROM HERE ON I'M STILL WORKING ON IT** -------------------------------------------------------------------
-
-Regarding the grading criteria, this visualization needs include:
-
-- SVG dimension 400 x 400 pixels  **(7 points)**
-- Font-type Open Sans **(5 points)**
-- Font size between 10 and 36 (depending on the type of chart) **(6 points)**
-- Color palette **( 3 points)**
-- License acknowledgement;  **(5 points)**
 
 ## Submission
 
-- you will need to synchronize this project to a GitHub repository. And make sure the web map is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management and hosting via GitHub); **(6 points)**
+- you will need to synchronize this project to a GitHub repository. And make sure the chart is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management and hosting via GitHub); **(7 points)**
 
-- To simplify your html page, please put the javascript code in the script tag to a separate javascript file `main.js` under the `js` folder, and put the CSS code in the style tag to a separate CSS file `main.css` under the `css` folder. If you will use any images or videos, please put to the `img` folder, where the geojson data are in the `assets` folder.  Please make sure the project repository structure is well organized. It should be similar to the file structure below. **(4 points)**
+- To simplify your html page, please put the CSS file `style.css` inside a `css` folder and all images in an `img` folder. These folders will be placed inside an `assets` folder, which will contain also your data (csv or json).  Please make sure the project repository structure is well organized. It should be similar to the file structure below. **(8 points)**
 
   ```powershell
   [your_repository_name]
       │index.html
       │readme.md
       ├─assets
-      │      airports.geojson
-      │      us-states.geojson
-      ├─css
-      │      main.css
-      ├─img
-      │      xxx.jpg
-      └─js
-              main.js
+          │ 
+          ├─css
+          │      style.css
+          ├─img
+          │      image.jpg
+          │      image.svg
+          └─data.csv
   ```
 
-- write up a project description in the `readme.md` file. This file will introduce the project name, a brief introduction, the major functions (especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgement, and other necessary information. **(8 points)**
 
- For submission, you are expected to submit the **url of the GitHub repository** to the **Canvas Lab 4 submission page** of this course. This url should be in the format of `https://www.github.com/[your_github_username]/[your_repository_name]`. Also the TA and other audience should be able to visit your chart through the url `https://[your_github_username].github.io/[your_repository_name]`. Please contact the instructor if you have any difficulty in submitting the url link.
+For submission, you are expected to submit the **url of the GitHub repository** to the **Canvas Lab 4 submission page** of this course. This url should be in the format of `https://www.github.com/[your_github_username]/[your_repository_name]`. Also the TA and other audience should be able to visit your chart through the url `https://[your_github_username].github.io/[your_repository_name]`. Please contact the instructor if you have any difficulty in submitting the url link.
 
 > If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
-## Reference for D3.js examples
+## References for D3.js 
 
-[1] The official website of D3 is the best place to start. 
+[1] The [official website](https://d3js.org/) of D3 is the best place to start. 
 
-[2] Data source: http://www.mapcruzin.com/google-earth-maps-resources/google-earth-cell-towers.htm
+[2] Live examples and code snippets:  [bl.ocks.org](https://bl.ocks.org/), [d3-discovery.net](https://d3-discovery.net/) and [christopheviau.com](http://christopheviau.com/d3list/gallery.html#title=all).
 
-[3] Boundary: http://oregonexplorer.info/ExternalContent/SpatialDataForDownload/RCE_counties.zip
-
-[4] Add topojson instead of geojson http://blog.webkid.io/maps-with-leaflet-and-topojson/
+[3] D3.js API reference: [D3 API reference](https://github.com/d3/d3/blob/master/API.md).
