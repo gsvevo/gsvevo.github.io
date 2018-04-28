@@ -49,7 +49,7 @@ Inside the `body`, we put our JavaScript code between `script` tags.
             width = +svg.attr("width") - margin.left - margin.right,
             height = +svg.attr("height") - margin.top - margin.bottom;
 
-        var x = d3.scaleBand().range([0, width]).padding(0.1),
+        var x = d3.scaleBand().range([0, width]).padding(0.2),
             y = d3.scaleLinear().range([height, 0]);
 
         var g = svg.append("g")
