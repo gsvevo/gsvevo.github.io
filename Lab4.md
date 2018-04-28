@@ -87,10 +87,10 @@ Please  click the chrome button that appears when you hover your mouse over the 
 
 Now we set the scale type and ranges for x and y. Scales are a convenient abstraction for a fundamental task in visualization: mapping a dimension of abstract data to a visual representation. 
 
-For continuous quantitative data, you typically want a linear scale.  For discrete ordinal (ordered) or categorical (unordered) data, an ordinal scale specifies an explicit mapping from a set of data values to a corresponding set of visual attributes. Band scales are like ordinal scales except the output range is continuous and numeric. We chose for the x axis a band scale with range between 0 and the width of the graph we defined in the previous section. We also add a padding value (0.1) to keep the individual bars separated from each other. For he y axis we chose a linear scale using as range value the height of the chart. Linear scales are a good default choice for continuous quantitative data because they preserve proportional differences.
+For continuous quantitative data, you typically want a linear scale.  For discrete ordinal (ordered) or categorical (unordered) data, an ordinal scale specifies an explicit mapping from a set of data values to a corresponding set of visual attributes. Band scales are like ordinal scales except the output range is continuous and numeric. We chose for the x axis a band scale with range between 0 and the width of the graph we defined in the previous section. We also add a padding value (0.2) to keep the individual bars separated from each other. For he y axis we chose a linear scale using as range value the height of the chart. Linear scales are a good default choice for continuous quantitative data because they preserve proportional differences.
 
 ```js
-        var x = d3.scaleBand().range([0, width]).padding(0.1),
+        var x = d3.scaleBand().range([0, width]).padding(0.2),
             y = d3.scaleLinear().range([height, 0]);
 ```
 
@@ -119,18 +119,12 @@ We can add the data directly in the code or call it from an external file. D3 su
 
 ```csv
 month,rain
-Jan,6.42
-Feb,5.12
-Mar,4.45
-Apr,2.91
-May,2.32
-Jun,1.54
-Jul,0.47
-Aug,0.51
-Sep,1.26
 Oct,3.11
 Nov,6.93
 Dec,7.72
+Jan,6.42
+Feb,5.12
+Mar,4.45
 ```
 
 
