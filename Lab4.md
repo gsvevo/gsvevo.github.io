@@ -14,7 +14,7 @@ In this lab, we will walk through the process of creating a simple bar chart usi
 
 > Throughout the walk-through section, areas with this `markdown` format indicate extra resources to explore the many options in D3.js. A great reference to always keep in mind is the [D3 API reference](https://github.com/d3/d3/blob/master/API.md).
 
-In the first part of this lab, we will create a bar chart showing last year's average precipitation in Corvallis. It is based on this [example](https://bl.ocks.org/mbostock/3885304) from [Mike Bostock](https://bost.ocks.org/mike/), the creator of D3.js. Data for this visualization come from [US Climate Data](https://www.usclimatedata.com/climate/corvallis/oregon/united-states/usor0076). Below is the chart you will make by walking through this lab handout.
+In the first part of this lab, we will create a bar chart showing last winter's average precipitation in Corvallis. It is based on this [example](https://bl.ocks.org/mbostock/3885304) from [Mike Bostock](https://bost.ocks.org/mike/), the creator of D3.js. Data for this visualization come from [US Climate Data](https://www.usclimatedata.com/climate/corvallis/oregon/united-states/usor0076). Below is the chart you will make by walking through this lab handout.
 
 ![](assets/img/image.jpg)
 
@@ -215,6 +215,7 @@ A label can be added to the y axis by appending a `text` element and positioning
             .attr("transform", "rotate(-90)")
             .attr("y", 6)
             .attr("dy", "0.7em")
+            .attr("fill", "#DC4404")
             .attr("text-anchor", "end")      
             .text("Inches");
 ```
@@ -236,26 +237,26 @@ We are going to use CSS to style the chart. Rather than writing the code in the 
 
 ```css
 .bar {
-  fill: rgb(235, 194, 14);
-  stroke: rgb(248, 149, 20);
+  fill:#F3BB3B;
+  stroke: #DC4404;
 }
 
 .bar:hover {
-  fill: rgb(255, 0, 0);
-}
+  fill:#DC4404;
+}  
 
 .axis{
-    stroke: rgb(192, 90, 6);
+    stroke: #DC4404;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 20px;
   }
 
 .axis line {
-    stroke: rgb(192, 90, 6);
+    stroke: #DC4404;
   }
 
 .axis path {
-    stroke: rgb(192, 90, 6);
+    stroke: #DC4404;
   }
 
 .axis--x path {
@@ -269,13 +270,13 @@ To color the bar chart we create in style.css the .bar class and specify colors 
 
 ```css
 .bar {
-  fill: rgb(235, 194, 14);
-  stroke: rgb(248, 149, 20);
+  fill:#F3BB3B;
+  stroke: #DC4404;
 }
 
 .bar:hover {
-  fill: rgb(255, 0, 0);
-}
+  fill:#DC4404;
+} 
 ```
 
 #### 4.2.2 Change the fonts
@@ -298,9 +299,9 @@ To style all the text in our chart with the `Open Sans` font, we modify the `.ax
 
 ```css
 .axis{
-    stroke: rgb(192, 90, 6);
+    stroke: #DC4404;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 20px;
   }
 ```
 
@@ -312,11 +313,11 @@ Finally we give a value for the `stroke` property of line (horizontal lines in t
 
 ```css
 .axis line {
-    stroke: rgb(192, 90, 6);
+    stroke: #DC4404;
   }
 
 .axis path {
-    stroke: rgb(192, 90, 6);
+    stroke: #DC4404;
   }
 
 .axis--x path {
@@ -340,6 +341,7 @@ To see these changes applied in the chart, we need to add the classes to the SVG
             .attr("transform", "rotate(-90)")
             .attr("y", 6)
             .attr("dy", "0.7em")
+            .attr("fill", "#DC4404")
             .attr("text-anchor", "end")      
             .text("Inches");
 
@@ -380,6 +382,34 @@ Please choose from these colors:
 
 ![](assets\img\colors.jpg)
 
+> 
+>
+>  HSL
+>
+> color1: hsla(18%, 96%, 44%, 1);
+>
+> color2: hsla(42%, 88%, 59%, 1);
+>
+> color3: hsla(0%, 1%, 86%, 1);
+>
+> color4: hsla(203%, 38%, 65%, 1);
+>
+> color5: hsla(214%, 42%, 53%, 1);
+>
+> RGB
+>
+> color1: rgba(220, 68, 4, 1);
+>
+> color2: rgba(243, 187, 59, 1);
+>
+> color3: rgba(220, 219, 219, 1);
+>
+> color4: rgba(132, 174, 200, 1);
+>
+> color5: rgba(85, 129, 186, 1);
+
+
+
 #### License
 
 Please credit the author of the example you are basing your visualization on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
@@ -410,7 +440,7 @@ Add an `img` folder inside the `assets` folder and place in it an SVG image of y
 >
 >    ​
 
-The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 50 px border on each side, as shown in the image below.
+The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 30 px border on top and bottom sides and a 20 px border on the left and right sides, as shown in the image below.
 
 ![](assets\img\scheme.png)
 
