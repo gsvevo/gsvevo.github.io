@@ -1,24 +1,24 @@
 .bar {
-  fill: #DC4404;
-  stroke:#F3BB3B;
+  fill:#F3BB3B;
+  stroke: #DC4404;
 }
 
 .bar:hover {
-  fill:#ED9729;
+  fill:#DC4404;
 }  
 
 .axis{
-    stroke: #F3BB3B;
+    stroke: #DC4404;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 20px;
   }
 
 .axis line {
-    stroke: #F3BB3B;
+    stroke: #DC4404;
   }
 
 .axis path {
-    stroke: #F3BB3B;
+    stroke: #DC4404;
   }
 
 .axis--x path {
