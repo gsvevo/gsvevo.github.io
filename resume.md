@@ -1,10 +1,10 @@
-# <img src="https://avatars3.githubusercontent.com/u/38077878?s=400&u=7b02ac0ee1d83adf2eab97009781148568b1fb11&v=4" width="130px" /> Giovanni Svevo 
+# <img src="https://avatars3.githubusercontent.com/u/38077878?s=400&u=7b02ac0ee1d83adf2eab97009781148568b1fb11&v=4" width="130px" /> Giovanni Svevo
 
-[svevog@oregonstate.edu](mailto:svevog@oregonstate.edu)
+:e-mail: [svevog@oregonstate.edu](mailto:svevog@oregonstate.edu)
 
 
 
-> "*To know nothing of what happened before you were born,* 
+> "*To know nothing of what happened before you were born,*
 >
 > *is to remain forever a child*"
 >
@@ -12,13 +12,13 @@
 
 
 
-## Summary
+## Summary :page_with_curl:
 
-I'm a Master's student in the department of Geography at Oregon State University. My background is in Classical Archaeology and Latin Epigraphy. In the last few years I specialized in the application of technology and computer programs to field and landscape archeology.  I use photogrammetry (Structure from Motion), GPS/GNSS measurements and GIS applications to produce extremely detailed and precise documentation of archeological activities, from intra-site (a single layer of an excavation) to inter-site level (complex archaeological/topographical map of a region). 
+I'm a Master's student in the department of Geography at Oregon State University. My background is in Classical Archaeology and Latin Epigraphy. In the last few years I specialized in the application of technology and computer programs to field and landscape archeology.  I use photogrammetry (Structure from Motion), GPS/GNSS measurements and GIS applications to produce extremely detailed and precise documentation of archeological activities, from intra-site (a single layer of an excavation) to inter-site level (complex archaeological/topographical map of a region).
 
 
 
-## Recent Work Experience
+## Recent Work Experience :construction_worker:
 
 ##### **Research**
 
@@ -30,9 +30,9 @@ Co-founder and Technical Director of [Actus srl](http://www.actus.it), company p
 
 * Scientific direction and execution of archaeological excavations and stratigraphic analysis
 
-* Creation of GIS platform to display archival, bibliographic, and cartographic data in processes of preventive archaeology for the execution of public works 
+* Creation of GIS platform to display archival, bibliographic, and cartographic data in processes of preventive archaeology for the execution of public works
 
-* Topographical mapping with GPS-GNSS satellite and TPS technology 
+* Topographical mapping with GPS-GNSS satellite and TPS technology
 
   ​
 
@@ -47,16 +47,16 @@ Co-founder and Technical Director of [Actus srl](http://www.actus.it), company p
 
 
 
-## Education
+## Education :school:
 
-<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />  
+<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />
 
 University of Rome 'La Sapienza' - Bachelor’s degree in archaeology, 2002
 
-<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />  
+<img src="https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png" width="100px" />
 
 University of Rome 'La Sapienza' - *Diploma di Specializzazione* in classical archaeology, 2007
 
-<img src="https://students.uu.nl/sites/default/files/styles/image_385x257/public/images/rebo_use_exchange-luiss.jpg?itok=Qls3VRz3&timestamp=1418386977" width="100px" />  
+<img src="https://students.uu.nl/sites/default/files/styles/image_385x257/public/images/rebo_use_exchange-luiss.jpg?itok=Qls3VRz3&timestamp=1418386977" width="100px" />
 
 LUISS Business School, Rome - Master’s in Preventive Archaeology and Archaeological Risk Management, 2012
